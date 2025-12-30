@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pragati Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book"></i> Pragati Book Store
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-address-book"></i> Contact</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html" class="btn-register"><i class="fas fa-user-plus"></i> Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions about our books or services? Reach out to us using any of the methods below.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Visit Our Store</h3>
+                                <p>123 Book Street, Reading City<br>Bookland 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+91 8180991643<br>Mon-Sat: 9AM-8PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@pragatibooks.com<br>support@pragatibooks.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h3>Business Hours</h3>
+                        <ul>
+                            <li>Monday - Friday: 9:00 AM - 8:00 PM</li>
+                            <li>Saturday: 10:00 AM - 6:00 PM</li>
+                            <li>Sunday: 11:00 AM - 5:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Status</option>
+                                <option value="book">Book Availability</option>
+                                <option value="event">Event Information</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <div class="map-container">
+                <!-- You can embed Google Maps here -->
+                <div class="map-placeholder">
+                    <img src="https://via.placeholder.com/1200x400/4a6fa5/ffffff?text=Map+Location" alt="Store Location Map">
+                    <p class="map-note">📍 123 Book Street, Reading City, Bookland 12345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What are your delivery options? <i class="fas fa-chevron-down"></i></h3>
+                    <p>We offer standard shipping (5-7 business days), expedited shipping (2-3 business days), and in-store pickup for local customers.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you ship internationally? <i class="fas fa-chevron-down"></i></h3>
+                    <p>Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by destination.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What is your return policy? <i class="fas fa-chevron-down"></i></h3>
+                    <p>You can return books within 30 days of purchase for a full refund, provided they are in original condition.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you buy used books? <i class="fas fa-chevron-down"></i></h3>
+                    <p>Yes, we accept used books in good condition for store credit. Please bring them to our physical location for evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-book"></i> Pragati Book Store</h3>
+                    <p>Your one-stop destination for all your reading needs since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Book Sales</a></li>
+                        <li><a href="#">Book Rentals</a></li>
+                        <li><a href="#">Rare Books</a></li>
+                        <li><a href="#">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Reading City</li>
+                        <li><i class="fas fa-phone"></i> +91 8180991643</li>
+                        <li><i class="fas fa-envelope"></i> info@pragatibooks.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pragati Book Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

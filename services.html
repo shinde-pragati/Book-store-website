@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Pragati Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book"></i> Pragati Book Store
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="services.html" class="active"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="contact.html"><i class="fas fa-address-book"></i> Contact</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html" class="btn-register"><i class="fas fa-user-plus"></i> Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive book solutions for every reader's need</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Book Sales</h3>
+                    <p>Browse our extensive collection of new and used books across all genres. From bestsellers to niche publications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> New releases weekly</li>
+                        <li><i class="fas fa-check"></i> Signed copies available</li>
+                        <li><i class="fas fa-check"></i> Competitive pricing</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Book Rentals</h3>
+                    <p>Rent textbooks and popular titles at affordable rates. Perfect for students and voracious readers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Flexible rental periods</li>
+                        <li><i class="fas fa-check"></i> College textbooks available</li>
+                        <li><i class="fas fa-check"></i> Online reservation system</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Rare & Collectible Books</h3>
+                    <p>Specializing in rare, first edition, and collectible books for serious collectors and enthusiasts.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Authentication service</li>
+                        <li><i class="fas fa-check"></i> Worldwide sourcing</li>
+                        <li><i class="fas fa-check"></i> Preservation consultation</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Custom Orders & Gifts</h3>
+                    <p>Personalized book services including custom wrapping, gift cards, and special order requests.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Personalized inscriptions</li>
+                        <li><i class="fas fa-check"></i> Gift wrapping service</li>
+                        <li><i class="fas fa-check"></i> Corporate gifting</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Book Clubs & Events</h3>
+                    <p>Host and participate in book clubs, author signings, reading events, and literary discussions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Monthly book clubs</li>
+                        <li><i class="fas fa-check"></i> Author meet & greets</li>
+                        <li><i class="fas fa-check"></i> Children's story time</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Subscription Boxes</h3>
+                    <p>Monthly curated book boxes tailored to your reading preferences. Discover new authors each month.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Theme-based selections</li>
+                        <li><i class="fas fa-check"></i> Customizable preferences</li>
+                        <li><i class="fas fa-check"></i> Free shipping</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Membership Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic Reader</h3>
+                    <div class="price">Free</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to events</li>
+                        <li><i class="fas fa-check"></i> Newsletter subscription</li>
+                        <li><i class="fas fa-times"></i> Rental discounts</li>
+                        <li><i class="fas fa-times"></i> Free shipping</li>
+                    </ul>
+                    <a href="register.html" class="btn btn-outline">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Premium Member</h3>
+                    <div class="price">$9.99<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Basic features</li>
+                        <li><i class="fas fa-check"></i> 15% rental discount</li>
+                        <li><i class="fas fa-check"></i> Free shipping over $25</li>
+                        <li><i class="fas fa-check"></i> Early access to sales</li>
+                    </ul>
+                    <a href="register.html" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Book Lover</h3>
+                    <div class="price">$24.99<span>/month</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> All Premium features</li>
+                        <li><i class="fas fa-check"></i> 25% rental discount</li>
+                        <li><i class="fas fa-check"></i> Free shipping always</li>
+                        <li><i class="fas fa-check"></i> Monthly book credit</li>
+                    </ul>
+                    <a href="register.html" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Explore Our Services?</h2>
+            <p>Sign up today and get 20% off your first purchase</p>
+            <div class="cta-buttons">
+                <a href="register.html" class="btn btn-primary">Create Account</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-book"></i> Pragati Book Store</h3>
+                    <p>Your one-stop destination for all your reading needs since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Book Sales</a></li>
+                        <li><a href="#">Book Rentals</a></li>
+                        <li><a href="#">Rare Books</a></li>
+                        <li><a href="#">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Reading City</li>
+                        <li><i class="fas fa-phone"></i> +91 8180991643</li>
+                        <li><i class="fas fa-envelope"></i> info@pragatibooks.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pragati Book Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

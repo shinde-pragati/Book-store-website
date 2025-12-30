@@ -1,0 +1,230 @@
+/* Additional responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .features-grid,
+    .team-grid,
+    .values-grid,
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .map-placeholder img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .features-grid,
+    .team-grid,
+    .values-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-col {
+        text-align: center;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .contact-item i {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .book-card,
+    .feature-card,
+    .service-card,
+    .pricing-card {
+        padding: 20px;
+    }
+    
+    .auth-form-container,
+    .auth-sidebar {
+        padding: 20px 15px;
+    }
+    
+    .map-note {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .newsletter,
+    .cta-section,
+    .hero-buttons,
+    .auth-sidebar {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+    
+    .btn {
+        display: none !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0000aa;
+        --secondary-color: #000066;
+        --accent-color: #aa0000;
+        --light-color: #ffffff;
+        --dark-color: #000000;
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .book-card:hover,
+    .feature-card:hover,
+    .service-card:hover,
+    .pricing-card:hover {
+        transform: none;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    
+    .navbar,
+    .feature-card,
+    .book-card,
+    .service-card,
+    .pricing-card,
+    .auth-form-container,
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea,
+    .input-with-icon input,
+    .btn-social.google {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+    }
+    
+    .footer {
+        background-color: #0a0a0a;
+    }
+    
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea,
+    .input-with-icon input,
+    .multiselect {
+        border-color: #444;
+    }
+    
+    .light-gray-bg {
+        background-color: #2d2d2d !important;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .auth-section {
+        padding: 40px 0;
+    }
+    
+    .auth-container {
+        grid-template-columns: 1fr;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 360px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .newsletter-form input {
+        padding: 12px;
+    }
+}

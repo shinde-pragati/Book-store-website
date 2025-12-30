@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati Book Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book"></i> Pragati Book Store
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="contact.html"><i class="fas fa-address-book"></i> Contact</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html" class="btn-register"><i class="fas fa-user-plus"></i> Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Next Favorite Book</h1>
+                <p>Explore our vast collection of books across all genres. From bestsellers to rare finds, we have something for every reader.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">Browse Collection</a>
+                    <a href="register.html" class="btn btn-secondary">Join Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section class="featured-books">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x300/4a6fa5/ffffff?text=Book+Cover" alt="Book Title" class="book-cover">
+                    <div class="book-info">
+                        <h3>The Silent Echo</h3>
+                        <p class="book-author">By Jane Smith</p>
+                        <p class="book-price">$24.99</p>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x300/4a6fa5/ffffff?text=Book+Cover" alt="Book Title" class="book-cover">
+                    <div class="book-info">
+                        <h3>Digital Dreams</h3>
+                        <p class="book-author">By Alex Johnson</p>
+                        <p class="book-price">$19.99</p>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x300/4a6fa5/ffffff?text=Book+Cover" alt="Book Title" class="book-cover">
+                    <div class="book-info">
+                        <h3>Beyond Horizons</h3>
+                        <p class="book-author">By Robert Chen</p>
+                        <p class="book-price">$29.99</p>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/200x300/4a6fa5/ffffff?text=Book+Cover" alt="Book Title" class="book-cover">
+                    <div class="book-info">
+                        <h3>The Last Chapter</h3>
+                        <p class="book-author">By Maria Garcia</p>
+                        <p class="book-price">$21.99</p>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Pragati Book Store?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>Free delivery on orders above $50</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Wide Selection</h3>
+                    <p>Over 50,000 books across all genres</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Customer support available round the clock</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy on all purchases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for latest arrivals and exclusive offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-book"></i> Pragati Book Store</h3>
+                    <p>Your one-stop destination for all your reading needs since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Book Sales</a></li>
+                        <li><a href="#">Book Rentals</a></li>
+                        <li><a href="#">Rare Books</a></li>
+                        <li><a href="#">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Reading City</li>
+                        <li><i class="fas fa-phone"></i> +91 8180991643</li>
+                        <li><i class="fas fa-envelope"></i> info@pragatibooks.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pragati Book Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
